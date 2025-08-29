@@ -33,7 +33,7 @@ Optimal objective: 27.0
 Selected items: [5, 6, 7]
 Run time: 0.0 
 
-## 3. Requirements
+## Requirements
 
 - Julia 1.11 or later  
 - Packages: `CSV`, `DataFrames`, `ArgParse`
