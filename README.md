@@ -7,11 +7,9 @@ The solver contains two main scripts:
 1. **gen.jl** — Generates a random knapsack instance and saves it as a `.csv` file. An accompanying file, **example.csv**, is provided to illustrate the expected CSV format and can be used to test the solver immediately. 
 2. **knapsack_solver.jl** — Reads a `.csv` instance and solves it using dynamic programming. The algorithm runs in pseudo-polynomial time **O(W·n)**, where **W** is the knapsack capacity and **n** is the number of items in the instance. The solver outputs the optimal total value and the list of selected items.
 
--- 
-
 ## Usage 
 
-### 1. Generate an Instance
+### Generate an Instance
 
 1. Run the generator with the following syntax:
 
@@ -29,9 +27,7 @@ julia gen.jl <n> <min_val> <max_val> <min_weight> <max_weight> <capacity> <filen
 julia knapsack_solver.jl <filename>
 ```
 
---
-
-## 2. Output example
+## Output example
 
 Optimal objective: 27.0
 Selected items: [5, 6, 7]
