@@ -75,11 +75,14 @@ function generate_kp_instance(n::Integer, min_val::Integer, max_val::Integer,
 end
 
 function main()
+    #----- Parse command line arguments 
+
     args = parse_commandline()
 
+    #----- Generate an instance example
+
     generate_kp_instance(args["n"], args["min_val"], args["max_val"],
-                         args["min_weight"], args["max_weight"],
-                         args["capacity"], args["filename"])
+    args["min_weight"], args["max_weight"], args["capacity"], args["filename"])
 end
 
 main()
